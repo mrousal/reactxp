@@ -163,6 +163,16 @@ export interface AnimatedViewAndImageCommonStyle extends AnimatedFlexboxStyle, A
 }
 
 // ------------------------------------------------------------
+// Container Style Rules
+// ------------------------------------------------------------
+
+export type ContainerStyleRuleSet = StyleRuleSet<ContainerStyle>;
+
+export interface ContainerStyle extends ViewAndImageCommonStyle {
+    borderStyle?: 'solid' | 'dotted' | 'dashed' | 'none';
+}
+
+// ------------------------------------------------------------
 // View Style Rules
 // ------------------------------------------------------------
 
@@ -536,6 +546,12 @@ export interface AnimatedTextProps extends TextPropsShared {
 }
 
 export type ViewLayerType = 'none' | 'software' | 'hardware';
+
+// Container
+export interface ContainerProps extends CommonProps {
+    children?: ReactNode;
+    style?:  StyleRuleSetRecursive<ContainerStyleRuleSet>;
+}
 
 // View
 export interface ViewPropsShared extends CommonProps, CommonAccessibilityProps {

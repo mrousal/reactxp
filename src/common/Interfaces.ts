@@ -172,6 +172,8 @@ export abstract class Accessibility {
 
 export abstract class Button extends React.Component<Types.ButtonProps, any> {}
 
+export abstract class Container extends React.Component<Types.ContainerProps, any> {}
+
 export abstract class Picker extends React.Component<Types.PickerProps, {}> {}
 
 export class Component<P, T> extends React.Component<P, T> {}

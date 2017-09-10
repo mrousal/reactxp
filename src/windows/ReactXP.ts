@@ -23,6 +23,7 @@ import { default as AlertImpl, Alert as AlertType } from '../native-common/Alert
 import { default as AppImpl, App as AppType } from '../native-common/App';
 import { default as PickerImpl, Picker as PickerType } from '../native-common/Picker';
 import { default as ButtonImpl, Button as ButtonType } from '../native-common/Button';
+import { View as ContainerImpl } from 'react-native';
 import { default as ImageImpl, Image as ImageType } from '../native-common/Image';
 import { default as ClipboardImpl, Clipboard as ClipboardType } from '../native-common/Clipboard';
 import { default as GestureViewImpl, GestureView as GestureViewType } from './GestureView';
@@ -78,6 +79,8 @@ module ReactXP {
     export var App = AppImpl;
     export type Button = ButtonType;
     export var Button = ButtonImpl;
+    export type Container = typeof ContainerImpl;
+    export var Container = ContainerImpl;
     export type Picker = PickerType;
     export var Picker = PickerImpl;
     export type Clipboard = ClipboardType;

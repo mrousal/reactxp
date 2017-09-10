@@ -31,6 +31,7 @@ import { ActivityIndicator as ActivityIndicatorImpl } from './ActivityIndicator'
 import { default as AlertImpl, Alert as AlertType } from './Alert';
 import { default as AppImpl, App as AppType } from './App';
 import { Button as ButtonImpl } from './Button';
+import { Container as ContainerImpl } from './Container';
 import { Picker as PickerImpl } from './Picker';
 import { Image as ImageImpl } from './Image';
 import { default as ClipboardImpl, Clipboard as ClipboardType } from './Clipboard';
@@ -75,6 +76,8 @@ module ReactXP {
     export var App = AppImpl;
     export type Button = ButtonImpl;
     export var Button = ButtonImpl;
+    export type Container = ContainerImpl;
+    export var Container = ContainerImpl;
     export type Picker = PickerImpl;
     export var Picker = PickerImpl;
     export type Clipboard = ClipboardType;
